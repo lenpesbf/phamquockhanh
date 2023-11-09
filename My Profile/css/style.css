@@ -513,6 +513,29 @@ nav ul li a {
   line-height: 24px;
 }
 
+
+/* 
+Exerxise
+ */
+#lab{
+  position: relative;
+}
+#lab .title{
+  position: absolute;
+  left: 41%;
+}
+#lab .btn_Lab .btn{
+  position: absolute;
+  left: 29%;
+  margin-top: 70px;
+  height: 50px;
+  width: 40%;
+  font-size: 20px;
+ 
+}
+#lab .btn_Lab .btn:hover{
+  background-color: #999999;
+} 
 /*-----------------------------------------------------------------------------------*/
 /*  Contact
 /*-----------------------------------------------------------------------------------*/
@@ -520,6 +543,7 @@ nav ul li a {
 #contact {
   height: auto;
   width: 100%;
+  margin-top: 100px;
 }
 
 .contact-details {
@@ -628,4 +652,22 @@ nav ul li a {
 
 .credits {
   font-size: 13px;
+}
+/* 
+Mobile: width < 740px
+ */
+@media only screen and (max-width: 46.1875em){
+  #lab .btn_Lab .btn{
+   width: 50%;
+  }
+  #lab .title{
+    position: absolute;
+    left: 35.5%;
+  }
+}
+/* 
+Tablet: width >= 740px and width < 1024px
+*/
+@media only screen and(min-width: 46.25em) and(max-width: 63.9375em){
+
 }
