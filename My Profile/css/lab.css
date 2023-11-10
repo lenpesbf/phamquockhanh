@@ -400,6 +400,10 @@ body{
     top: 143%;
     background-color: rgb(188,166,135);
     border-radius: 30px;
+    cursor: pointer;
+}
+.dow_Btn:hover{
+  background-color: rgb(223, 203, 175);
 }
 .figma{
     position: relative;
@@ -421,6 +425,10 @@ body{
   height: 8%;
   width: 10%;
   border-radius: 30px;
+  cursor: pointer;
+}
+.btn_Dow_Figma:hover{
+  background-color: rgb(223, 203, 175);
 }
 .btn_Link_Figma{
   position: absolute;
@@ -430,4 +438,8 @@ body{
   height: 8%;
   width: 10%;
   border-radius: 30px;
+  cursor: pointer;
+}
+.btn_Link_Figma:hover{
+  background-color: rgb(223, 203, 175);
 }
