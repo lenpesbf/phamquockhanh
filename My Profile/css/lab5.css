@@ -849,6 +849,7 @@ background-color: rgb(223, 203, 175);
   position: absolute;
   left: 15px;
   top: 300px;
+  border: solid 1px;
 }
 .rectangle-25 {
   background: #c7b69e;
@@ -858,6 +859,7 @@ background-color: rgb(223, 203, 175);
   position: absolute;
   left: 15px;
   top: 450px;
+  border: solid 1px;
 }
 .rectangle-26 {
   background: #c7b69e;
@@ -868,6 +870,7 @@ background-color: rgb(223, 203, 175);
   position: absolute;
   left: 15px;
   top: 600px;
+  border: solid 1px;
 }
 .rectangle-27 {
   background: #c7b69e;
