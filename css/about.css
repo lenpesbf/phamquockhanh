@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 600px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: azure;
+}
+#content .Background{
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    padding-left: 450px;
+    align-items: center;
+}
+#content h1{
+    position: absolute;
+    z-index: 2;
+    bottom: 350px;
+    color: black;
+    left: 15px;
+    font-size: 45px;
+}
+#content h2{
+    position: absolute;
+    z-index: 2;
+    bottom: 300px;
+    left: 140px;
+    color: black;
+    font-size: 25px;
+}
+
+#content a{
+    z-index: 3;
+    position: absolute;
+    bottom: 170px;
+    left: 150px;
+    list-style-type: none;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 50%; /* Để tạo khung tròn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+#content a:hover{
+    background-color: rgb(31, 26, 26);
+}

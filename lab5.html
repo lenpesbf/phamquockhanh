@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Exercise</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="./css/lab5.css">
+</head>
+<body>   
+  <div id="header">
+    <div class="menu">
+      <a href="./lab.html"><h1 class="title">My Exercise</h1></a>
+      <div class="item" onclick="changeColor(this)">
+        <a href="./lab.html" ><button class="btn_Lab">Lab4</button></a>
+      </div>
+      <div class="item " onclick="changeColor(this)">
+        <a href="./lab5.html " ><button class="btn_Lab5 active">Lab5</button></a>
+      </div>
+      <div class="item" onclick="changeColor(this)">
+        <a href="./lab6.html"><button class="btn_Lab6 active">Lab6</button></a>
+      </div>
+      <div class="item " onclick="changeColor(this)">
+        <a href=""><button class="btn_Lab7" >Lab7</button></a>
+      </div>
+      <div class="item" onclick="changeColor(this)">
+        <a href=""><button class="btn_Lab8" >Lab8</button></a>
+      </div>
+    </div>
+  
+</div>
+<script>
+  let activeItem = null;
+    function changeColor(item) {
+    
+    // Bỏ chọn màu của phần tử trước đó (nếu có)
+    if (activeItem !== null) {
+        activeItem.classList.remove('active');
+    }
+
+    // Chọn màu của phần tử được click
+    item.classList.add('active');
+    activeItem = item;
+}
+</script>
+
+    <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">Requirements</button>
+    <button class="tablinks" onclick="openCity(event, 'Ha')">User Scenario</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Design</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Implement</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+    <!-- <h3>Requirements</h3> -->
+    <div class="desktop-2">
+      <div
+        class="b-i-t-p-c-nh-n-1-t-o-ra-m-t-user-scenario-2-ch-n-1-b-c-trong-user-scenario-thi-t-k-1-form-giao-di-n-web-tr-n-c-ng-c-thi-t-k-ch-n-sau-thi-t-k-tr-n-figma-r-i-chuy-n-sang-html-t-ng-ng-cho-thi-t-k-n-y-upload-l-n-github-trong-file-html-c-ch-n-h-nh-nh-c-a-user-scenario-1-v-ng-d-n-c-a-file-thi-t-k-2"
+      >
+        <span
+          ><span
+            class="b-i-t-p-c-nh-n-1-t-o-ra-m-t-user-scenario-2-ch-n-1-b-c-trong-user-scenario-thi-t-k-1-form-giao-di-n-web-tr-n-c-ng-c-thi-t-k-ch-n-sau-thi-t-k-tr-n-figma-r-i-chuy-n-sang-html-t-ng-ng-cho-thi-t-k-n-y-upload-l-n-github-trong-file-html-c-ch-n-h-nh-nh-c-a-user-scenario-1-v-ng-d-n-c-a-file-thi-t-k-2-span"
+            >Bài tập cá nhân:<br /></span
+          ><span
+            class="b-i-t-p-c-nh-n-1-t-o-ra-m-t-user-scenario-2-ch-n-1-b-c-trong-user-scenario-thi-t-k-1-form-giao-di-n-web-tr-n-c-ng-c-thi-t-k-ch-n-sau-thi-t-k-tr-n-figma-r-i-chuy-n-sang-html-t-ng-ng-cho-thi-t-k-n-y-upload-l-n-github-trong-file-html-c-ch-n-h-nh-nh-c-a-user-scenario-1-v-ng-d-n-c-a-file-thi-t-k-2-span2"
+            >(1) Tạo ra một user scenario<br />(2) Chọn 1 bước trong user scenario
+            để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn. Sau đó
+            thiết kế trên Figma rồi chuyển sang html tương ứng cho thiết kế này.<br /></span
+          ><span
+            class="b-i-t-p-c-nh-n-1-t-o-ra-m-t-user-scenario-2-ch-n-1-b-c-trong-user-scenario-thi-t-k-1-form-giao-di-n-web-tr-n-c-ng-c-thi-t-k-ch-n-sau-thi-t-k-tr-n-figma-r-i-chuy-n-sang-html-t-ng-ng-cho-thi-t-k-n-y-upload-l-n-github-trong-file-html-c-ch-n-h-nh-nh-c-a-user-scenario-1-v-ng-d-n-c-a-file-thi-t-k-2-span3"
+            >Upload lên github:</span
+          ><span
+            class="b-i-t-p-c-nh-n-1-t-o-ra-m-t-user-scenario-2-ch-n-1-b-c-trong-user-scenario-thi-t-k-1-form-giao-di-n-web-tr-n-c-ng-c-thi-t-k-ch-n-sau-thi-t-k-tr-n-figma-r-i-chuy-n-sang-html-t-ng-ng-cho-thi-t-k-n-y-upload-l-n-github-trong-file-html-c-ch-n-h-nh-nh-c-a-user-scenario-1-v-ng-d-n-c-a-file-thi-t-k-2-span4"
+          >
+            trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn
+            của file thiết kế ở (2).</span
+          ></span
+        >
+      </div>
+    </div>
+    
+    
+
+  </div>
+  
+  <div id="Ha" class="tabcontent">
+    <h3>User Scenario</h3>
+    <div class="user-scenario">
+      <div class="rec-1"></div>
+      <div class="rec-2"></div>
+      <div class="rec-3"></div>
+      <div class="rec-4"></div>
+      <div class="rec-5"></div>
+      <div class="rec-6"></div>
+      <div class="rec-7"></div>
+      <div
+        class="v-o-1-trang-website-uy-t-n-ch-t-l-ng-ph-h-p-v-i-nhu-c-u-c-a-ng-i-d-ng"
+      >
+        Vào 1 trang website uy tín, chất lượng phù hợp với nhu cầu của người dùng.
+      </div>
+      <div class="ng-nh-p-v-o-trang-web">Đăng nhập vào trang web đó.</div>
+      <div class="t-m-ki-m-a-danh-nhu-c-u-ph-h-p-v-i-ng-i-d-ng">
+        Tìm kiếm địa danh, nhu cầu phù hợp với người dùng.
+      </div>
+      <div class="t-d-ch-v-v-trao-i-v-i-fanpage">
+        Đặt dịch vụ và trao đổi với fanpage.
+      </div>
+      <div
+        class="x-c-nh-n-l-i-t-t-c-th-ng-tin-v-chuy-n-ti-n-t-th-nh-c-ng-d-ch-v-cho-fanpage"
+      >
+        Xác nhận lại tất cả thông tin và chuyển tiên để đặt thành công dịch vụ cho
+        fanpage.
+      </div>
+      <div class="l-u-l-i-th-ng-tin-c-n-thi-t-khi-t-xong-d-ch-v">
+        Lưu lại thông tin cần thiết khi đã đặt xong dịch vụ.
+      </div>
+      <div class="s-d-ng-c-c-d-ch-v-ng-k-tr-c-b-t-u-h-nh-tr-nh">
+        Sử dụng các dịch vụ đã đăng kí trước, để bắt đầu hành trình.
+      </div>
+      <svg
+        class="polygon-1"
+        width="77"
+        height="68"
+        viewBox="0 0 77 68"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M70.2079 40.9533L13.8887 66.2208C7.60319 69.0408 0.5 64.4423 0.5 57.5532V10.9757C0.5 4.33079 7.14709 -0.2611 13.362 2.09048L69.6812 23.4004C77.6054 26.3988 77.9381 37.4852 70.2079 40.9533Z"
+          fill="#D9D9D9"
+          stroke="black"
+        />
+      </svg>
+    
+      <svg
+        class="polygon-2"
+        width="77"
+        height="68"
+        viewBox="0 0 77 68"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M70.2079 40.4533L13.8887 65.7208C7.60319 68.5408 0.5 63.9423 0.5 57.0532V10.4757C0.5 3.83079 7.14709 -0.7611 13.362 1.59048L69.6812 22.9004C77.6054 25.8988 77.9381 36.9852 70.2079 40.4533Z"
+          fill="#D9D9D9"
+          stroke="black"
+        />
+      </svg>
+    
+      <svg
+        class="polygon-3"
+        width="68"
+        height="77"
+        viewBox="0 0 68 77"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M27.0467 70.2079L1.77917 13.8887C-1.04082 7.60319 3.55767 0.5 10.4468 0.5L57.0243 0.5C63.6692 0.5 68.2611 7.14709 65.9095 13.362L44.5996 69.6812C41.6012 77.6054 30.5148 77.9381 27.0467 70.2079Z"
+          fill="#D9D9D9"
+          stroke="black"
+        />
+      </svg>
+    
+      <svg
+        class="polygon-6"
+        width="68"
+        height="77"
+        viewBox="0 0 68 77"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M27.0467 70.2079L1.77917 13.8887C-1.04082 7.60319 3.55767 0.5 10.4468 0.5L57.0243 0.5C63.6692 0.5 68.2611 7.14709 65.9095 13.362L44.5996 69.6812C41.6012 77.6054 30.5148 77.9381 27.0467 70.2079Z"
+          fill="#D9D9D9"
+          stroke="black"
+        />
+      </svg>
+    
+      <svg
+        class="polygon-4"
+        width="77"
+        height="68"
+        viewBox="0 0 77 68"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6.29208 27.0467L62.6113 1.77917C68.8968 -1.04082 76 3.55767 76 10.4468L76 57.0243C76 63.6692 69.3529 68.2611 63.138 65.9095L6.81884 44.5996C-1.10536 41.6012 -1.43806 30.5148 6.29208 27.0467Z"
+          fill="#D9D9D9"
+          stroke="black"
+        />
+      </svg>
+    
+      <svg
+        class="polygon-5"
+        width="77"
+        height="68"
+        viewBox="0 0 77 68"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6.29208 27.0467L62.6113 1.77917C68.8968 -1.04082 76 3.55767 76 10.4468L76 57.0243C76 63.6692 69.3529 68.2611 63.138 65.9095L6.81884 44.5996C-1.10536 41.6012 -1.43806 30.5148 6.29208 27.0467Z"
+          fill="#D9D9D9"
+          stroke="black"
+        />
+      </svg>
+    </div>
+    <style>
+     
+
+    </style>    
+  </div>
+
+  <div id="Paris" class="tabcontent">
+    <h3>Design</h3>
+    <div class="page">
+        <img src="./images/designOnPaper.jpg" class="pic_page">
+    </div>
+    <a href="./images/designOnPaper.jpg" download="desing_Page" ><button class="dow_Btn">Download</button></a>
+    <div class="figma">
+        <img src="./images/desinOnFigma.jpg" class="pic_figma">
+    </div>
+    <a href="./images/desinOnFigma.jpg" download="design_Figma" ><button class="btn_Dow_Figma">Download</button></a>
+    <a href="https://www.figma.com/file/EbsVabv3lm61Jg21KKUB27/Untitled?type=design&node-id=48-2&mode=design&t=khtIRxagm4TMZNOX-0" target="_blank" ><button class="btn_Link_Figma">Go to Figma</button></a>   
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <h3>Implement</h3>
+    <div class="desktop-1">
+      <div class="ng-y-th-ng-n-m">Ngày/Tháng/Năm.</div>
+      <div class="h-v-t-n">Họ Và Tên.</div>
+      <div class="s-i-n-tho-i">Số điện thoại.</div>
+      <div class="gmail-c-nh-n">Gmail cá nhân.</div>
+      <div class="s-ti-n-t-d-ch-v">Số tiền đặt dịch vụ.</div>
+      <div class="rectangle-5"></div>
+      <div class="rectangle-24"></div>
+      <div class="rectangle-25"></div>
+      <div class="rectangle-26"></div>
+      <div class="rectangle-27"></div>
+      <div class="rectangle-10"></div>
+      <svg
+        class="rectangle-11"
+        width="319"
+        height="58"
+        viewBox="0 0 319 58"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 29C0 12.9837 12.9837 0 29 0H290C306.016 0 319 12.9837 319 29C319 45.0163 306.016 58 290 58H29C12.9837 58 0 45.0163 0 29Z"
+          fill="#C7B69E"
+        />
+      </svg>
+    
+      <img src="./images/add.png" class="add">
+      <img src="./images/photo.png" class="photo">
+      <img src="./images/folder (3).png" class="folder">
+      <img src="./images/gif.png" class="gif">
+      <img src="./images/smile.png" class="smile">
+      <img src="./images/like (1).png" class="like">
+
+
+      <div class="rectangle-20"></div>
+      <div class="t-n-ng-i-d-ng">Tên người dùng</div>
+      <img class="rectangle-21" src="./images/dau_x1-removebg-preview.png" />
+      <div class="dd-dd-dddd">DD/DD/DDDD</div>
+      <div class="h-y-nh-p-h-v-t-n">Hãy nhập họ và tên</div>
+      <div class="aa">Aa</div>
+      <div class="_84-090-xx-xxx-xxx">(+84) 090xx.xxx.xxx</div>
+      <div class="abc-gmail-com">abc@gmail.com</div>
+      <div class="_0-00000-vnd">0.00000 VND</div>
+    </div>
+     
+     
+      
+      
+  </div>
+
+
+    <script>
+        function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
