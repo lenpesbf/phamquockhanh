@@ -16,6 +16,11 @@ body{
     font-size: 70px;
     padding-top: 20px;
     font-family: "Sofia", sans-serif;
+    cursor: pointer;
+    color: #000;
+}
+#header h1:hover{
+    color: rgb(212, 201, 185);
 }
 #header .btn_Lab{
     position: absolute;
@@ -77,25 +82,55 @@ body{
   background-color: rgb(188,166,135);
   border-radius: 20px;
 }
+.item{
+  transition: background-color 0.3s;
+}
+.item button:hover {
+  background-color: rgb(188,166,135);
+}
+
+/* Create an active/current tablink class */
+.item button.active {
+  background-color: rgb(212, 201, 185);
+}
 #header .btn_Lab:hover{
     background-color: rgb(212, 201, 185);
     cursor: pointer;
+}
+#header .btn_Lab.active {
+    background-color: rgb(212, 201, 185);
+    cursor: pointer;
+}
+#header .btn_Lab:focus{
+    background-color: rgb(192, 174, 147);
 }
 #header .btn_Lab5:hover{
   background-color: rgb(212, 201, 185);
   cursor: pointer;
 }
+#header .btn_Lab5:focus{
+  background-color: rgb(192, 174, 147);
+}
 #header .btn_Lab6:hover{
   background-color: rgb(212, 201, 185);
   cursor: pointer;
+}
+#header .btn_Lab6:focus{
+  background-color: rgb(192, 174, 147);
 }
 #header .btn_Lab7:hover{
   background-color: rgb(212, 201, 185);
   cursor: pointer;
 }
+#header .btn_Lab7:focus{
+  background-color: rgb(192, 174, 147);
+}
 #header .btn_Lab8:hover{
   background-color: rgb(212, 201, 185);
   cursor: pointer;
+}
+#header .btn_Lab8:focus{
+  background-color: rgb(192, 174, 147);
 }
 /* Style the tab */
 .tab {
