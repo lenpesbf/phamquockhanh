@@ -211,7 +211,7 @@ body{
     padding: 14px 16px;
     transition: 0.3s;
   }
-  
+
   /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: rgb(188,166,135);

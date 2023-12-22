@@ -20,11 +20,55 @@
     </div>
   
     <!-- Tab links -->
+   
     <div class="tab">
-        <a href="./ex1.html"><button class="tablinks" onclick="openCity(event, 'London')">Ex1</button></a>
-        <a href="./ex2.html"><button class="tablinks" onclick="openCity(event, 'Paris')">Ex2</button></a>
+        <a href="./ex1.html" target="_blank" onclick="openCity(event, 'London'); openNestedTab(event, 'Ex1Tab1', 'ex1');">
+            <button class="tablinks">Ex1</button>
+        </a>
+        <a href="./ex2.html" target="_blank"><button class="tablinks" onclick="openCity(event, 'Paris')">Ex2</button></a>
     </div>
-  
-    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        openCity({ currentTarget: document.querySelector('.tablinks') }, 'London');
+        openNestedTab({ currentTarget: document.querySelector('.ex1-nested-tablinks') }, 'Ex1Tab1', 'ex1');
+    });
+
+    function openCity(evt, cityName) {
+        // Ẩn tất cả tab content
+        var tabcontent = document.getElementsByClassName("tabcontent");
+        for (var i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Ẩn tất cả các nút tab
+        var tablinks = document.getElementsByClassName("tablinks");
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Hiển thị tab content được chọn và đánh dấu là active
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    function openNestedTab(evt, tabName, exerciseName) {
+        // Ẩn tất cả tab content của exercise
+        var nestedTabcontent = document.getElementsByClassName(exerciseName + "-nested-tabcontent");
+        for (var i = 0; i < nestedTabcontent.length; i++) {
+            nestedTabcontent[i].style.display = "none";
+        }
+
+        // Ẩn tất cả các nút tab của exercise
+        var nestedTablinks = document.getElementsByClassName(exerciseName + "-nested-tablinks");
+        for (var i = 0; i < nestedTablinks.length; i++) {
+            nestedTablinks[i].className = nestedTablinks[i].className.replace(" active", "");
+        }
+
+        // Hiển thị tab content được chọn và đánh dấu là active
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
 </body>
 </html>

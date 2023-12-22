@@ -10,11 +10,11 @@
 <body>   
     <div id="header">
             <a href="./lab.html"><h1 class="title">My Exercise</h1></a>
-            <a href="./lab.html" ><button class="btn_Lab">Lab4</button></a>
-            <a href="./lab5.html" ><button class="btn_Lab5">Lab5</button></a>
+            <!-- <a href="./lab.html" ><button class="btn_Lab">Lab4</button></a> -->
+            <!-- <a href="./lab5.html" ><button class="btn_Lab5">Lab5</button></a> -->
             <a href="./lab6.html"><button class="btn_Lab6 active">Lab6</button></a>
-            <a href=""><button class="btn_Lab7" >Lab7</button></a>
-            <a href=""><button class="btn_Lab8" >Lab8</button></a>
+            <!-- <a href=""><button class="btn_Lab7" >Lab7</button></a> -->
+            <!-- <a href=""><button class="btn_Lab8" >Lab8</button></a> -->
         </div>
       
     </div>
@@ -22,14 +22,14 @@
     <!-- Tab links -->
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'London')">Ex1</button>
-        <a href="./ex2.html"><button class="tablinks" onclick="openCity(event, 'Paris')">Ex2</button></a>
+        <!-- <a href="./ex2.html" ><button class="tablinks" onclick="openCity(event, 'Paris')">Ex2</button></a> -->
     </div>
     <!-- Tab content -->
     <div id="London" class="tabcontent">
         <!-- Nested tabs for 'Ex1' -->
         <div class="nested-tab">
-            <button class="nested-tablinks" onclick="openNestedTab(event, 'Ex1Tab1')">Design</button>
-            <button class="nested-tablinks" onclick="openNestedTab(event, 'Ex1Tab2')">Implement</button>
+          <button class="nested-tablinks ex1-nested-tablinks" onclick="openNestedTab(event, 'Ex1Tab1', 'ex1')">Design</button>
+          <button class="nested-tablinks ex1-nested-tablinks" onclick="openNestedTab(event, 'Ex1Tab2', 'ex1')">Implement</button>
         </div>
         <!-- Nested tab content for 'Ex1' -->
         <div id="Ex1Tab1" class="nested-tabcontent">
