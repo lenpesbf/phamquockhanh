@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Exercise</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="./css/lab8.css">
+</head>
+<body>   
+    <div id="header">
+        <div class="menu">
+          <a href="./about.html"><h1 class="title">My Exercise</h1></a>
+          <div class="item" onclick="changeColor(this)">
+            <a href="./lab.html" ><button class="btn_Lab">Lab4</button></a>
+          </div>
+          <div class="item" onclick="changeColor(this)">
+            <a href="./lab5.html" ><button class="btn_Lab5">Lab5</button></a>
+          </div>
+          <div class="item" onclick="changeColor(this)">
+            <a href="./lab6.html"><button class="btn_Lab6">Lab6</button></a>
+          </div>
+          <div class="item" onclick="changeColor(this)">
+            <a href="./lab7.html"><button class="btn_Lab7" >Lab7</button></a>
+          </div>
+          <div class="item" onclick="changeColor(this)">
+            <a href="./lab8.html"><button class="btn_Lab8 active">Lab8</button></a>
+          </div>
+        </div>
+      
+    </div>
+  
+    <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Implement</button>
+  </div>
+  
+  <!-- Tab content -->
+  
+  <div id="Tokyo" class="tabcontent">
+    <h3>Implement</h3>
+   <iframe src="./Implement_Lab7.html" width="1230" height="1200" frameborder="0" class="implement_lab7"></iframe>
+      
+  </div>
+
+
+    <script>
+        function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
