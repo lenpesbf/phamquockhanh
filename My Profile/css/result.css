@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+  
+body{
+    background-color: rgb(244,244,244);
+}
+#header{
+    position: relative;
+    height: 200px;
+}
+#header h1{
+    position: absolute;
+    left: 40%;
+    font-size: 70px;
+    padding-top: 20px;
+    font-family: "Sofia", sans-serif;
+    color: #000;
+}
+#header h1:hover{
+    color: rgb(212, 201, 185);
+}
+#content{
+
+}
+#content .Web_Personal{
+    height: 150%;
+    width: 400px;
+    background-color: rgb(188,166,135);
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 5%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+#content .Web_Personal h2{
+    position: absolute;
+    font-size: 35px;
+    left: 25%;
+}
+#content .Web_Personal a{
+    position: absolute;
+    margin-top: 40px;
+    font-size: 23px;
+    color: black;
+    left: 30%;
+}
+#content .Web_Personal a:hover{
+    color: rgb(233, 225, 225);
+}
+#content .Web_Personal .info_WP{
+    margin-top: 80px;
+    font-size: 20px;
+    margin-left: 2%;
+}
+#content .Web_Personal h3{
+    margin-left: 3%;
+    font-size: 22px;
+    margin-top: 10px;
+}
+#content .Web_Personal h4{
+    font-size: 18px;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+#content .Web_Personal:hover{
+    transform: scale(1.1);
+}
+#content .Web_Group_About{
+    height: 150%;
+    width: 400px;
+    background-color: rgb(188,166,135);
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 38%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+#content .Web_Group_About h2{
+    position: absolute;
+    font-size: 35px;
+    left: 18%;
+}
+#content .Web_Group_About a{
+    position: absolute;
+    margin-top: 40px;
+    font-size: 23px;
+    color: black;
+    left: 30%;
+}
+#content .Web_Group_About a:hover{
+    color: rgb(233, 225, 225);
+}
+#content .Web_Group_About h3{
+    margin-left: 3%;
+    font-size: 25px;
+    margin-top: 20%;
+}
+#content .Web_Group_About h4{
+    font-size: 20px;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+#content .Web_Group_About:hover{
+    transform: scale(1.1);
+}
+#content .Web_Project{
+    height: 150%;
+    width: 400px;
+    background-color: rgb(188,166,135);
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 70%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+#content .Web_Project h2{
+    position: absolute;
+    font-size: 35px;
+    left: 25%;
+}
+#content .Web_Project a{
+    position: absolute;
+    margin-top: 40px;
+    font-size: 23px;
+    color: black;
+    left: 30%;
+}
+#content .Web_Project a:hover{
+    color: rgb(233, 225, 225);
+}
+#content .Web_Project h3{
+    margin-left: 3%;
+    font-size: 25px;
+    margin-top: 20%;
+}
+#content .Web_Project h4{
+    font-size: 20px;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+#content .Web_Project:hover{
+    transform: scale(1.1);
+}
+/* ----------- */
+#content .Rate1{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 280%;
+    border-radius: 20px;
+    left: 6%;
+}
+#content .Rate1 h2{
+    position: absolute;
+    font-size: 40px;
+}
+#content .Rate1 .Nav_R1{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 7%;
+    left: 10%;
+}
+
+#content .Rate2{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 400%;
+    border-radius: 20px;
+    left: 6%;
+}
+#content .Rate2 h2{
+    position: absolute;
+    font-size: 40px;
+}
+#content .Rate2 .Nav_R2{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 7%;
+    left: 10%;
+}
+
+#content .Rate3{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 530%;
+    border-radius: 20px;
+    left: 6%;
+}
+#content .Rate3 h2{
+    position: absolute;
+    font-size: 40px;
+}
+#content .Rate3 .Nav_R3{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 7%;
+    left: 10%;
+}
+/* -------------- */
+#footer{
+    position: absolute;
+    top: 650%;
+    left: 40%;
+}
+#footer h3{
+    position: absolute;
+    left: 30%;
+    margin-top: 5%;
+}
